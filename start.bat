@@ -1,0 +1,2 @@
+python valoai.py
+pause
