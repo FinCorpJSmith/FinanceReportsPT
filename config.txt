@@ -1,52 +1,85 @@
 {
-    "aimbot": {
-        "aim_key": "right",
-        "trigger_key": "side2",
-        "exit_key": "end",
-        "confidence": 0.5,
-        "smoothing": 1.0,
-        "fov": 320,
-        "aim_height_adjustment": 0,
-        "trigger_delay": 0.35,
-        "target_priority": "center",
-        "aim_speed": 1.2,
-        "bezier_steps": 10,
-        "accel_factor": 1.1,
-        "bezier_start_delay": 0.01,
-        "bezier_end_delay": 0.0008,
-        "flick_cooldown": 0.5,
-        "anti_recoil_value": 0,
-        "aim_mode": "legit"
-    },
-    "valoai": {
-        "aim_key": "right",
-        "trigger_key": "side2",
-        "exit_key": "end",
-        "confidence": 0.3,
-        "smoothing": 1.8,
-        "fov": 320,
-        "aim_height_adjustment": 0,
-        "trigger_delay": 0.35,
-        "target_priority": "center",
-        "aim_mode": "legit"
-    },
-    "aim_key": "right",
-    "trigger_key": "side2",
     "exit_key": "end",
-    "confidence": 0.45,
-    "smoothing": 1.0,
-    "fov": 320,
     "aim_height_adjustment": 0,
-    "trigger_delay": 0.35,
+    "valorant_sensitivity": 0.4,
+    "confidence": 0.4,
+    "fov": 320,
     "target_priority": "center",
-    "aim_speed": 1.0,
-    "bezier_steps": 10,
-    "accel_factor": 1.4,
-    "bezier_start_delay": 0.01,
-    "bezier_end_delay": 0.0008,
-    "flick_cooldown": 0.5,
-    "anti_recoil_value": 0,
-    "aim_mode": "legit",
-    "anti_recoil_delay": 0.2,
-    "valorant_sensitivity": 0.5
+    "aim_deadzone_px": 1.0,
+    "aim_speed_min": 1.0,
+    "aim_speed_max": 2.0,
+    "tracking_speed_multiplier": 9.0,
+    "follow_mode_threshold_px": 30.0,
+    "prediction_factor": 1.0,
+    "estimated_latency_ms": 25,
+    "smoothing_alpha_near": 0.95,
+    "smoothing_alpha_far": 0.1,
+    "aim_mode_settings": {
+        "normal": {
+            "steps": [
+                [
+                    Infinity,
+                    10.0
+                ]
+            ]
+        },
+        "slow": {
+            "steps": [
+                [
+                    Infinity,
+                    1.0
+                ]
+            ]
+        },
+        "follow": {
+            "steps": [
+                [
+                    Infinity,
+                    10.0
+                ]
+            ]
+        },
+        "rage": {
+            "steps": [
+                [
+                    Infinity,
+                    15.0
+                ]
+            ]
+        },
+        "flick": {
+            "steps": []
+        },
+        "silent": {
+            "steps": []
+        }
+    },
+    "config_save_path": "config.txt",
+    "enemy_color_enabled": false,
+    "lower_color": [
+        230,
+        40,
+        40
+    ],
+    "upper_color": [
+        255,
+        90,
+        104
+    ],
+    "aimbot_enabled": true,
+    "activation_range": 100.0,
+    "aimbot_mode": "normal",
+    "smoothing_alpha_mid": 0.7,
+    "smoothing_alpha_precision": 0.15,
+    "smoothing_transition_far": 80.0,
+    "smoothing_transition_mid": 30.0,
+    "smoothing_transition_near": 15.0,
+    "flick_smoothing": 10,
+    "flick_cooldown_ms": 50,
+    "silent_cooldown_ms": 50,
+    "triggerbot_enabled": true,
+    "trigger_delay_ms": 10,
+    "anti_recoil_enabled": false,
+    "anti_recoil_strength": 0.3,
+    "anti_recoil_delay_ms": 100
 }
